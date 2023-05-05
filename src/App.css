@@ -65,66 +65,8 @@ button:focus,
 button:active{
   outline: none;
 }
-button:hover{
-  background-color: greenyellow;
-}
 .highlight {
   background-color: #56cbfb;
-}
-body >.animation div{
-  height: 100px;
-  width: 100%;
-  background-color: green;
-  animation-name: moves;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes moves {
-  0% {
-    top: 5px;
-    left: 5px;
-    background-color: green;
-  }
-  20% {
-    top: 80vh;
-    left: 20vw;
-    background-color: greenyellow;
-    transform: rotate(10deg);
-  }
-  /* 30%{
-  top: 200px;
-  left: 500px;
-  background-color: orange;
-  transform: rotate(90deg);
-
-} */
-  40% {
-    top: 5px;
-    left: 40vw;
-    border-radius: 50%;
-    background-color: orangered;
-  }
-  55% {
-    top: 80vh;
-    left: 55vw;
-    background-color: gold;
-    transform: rotate(50deg);
-  }
-  75% {
-    top: 5px;
-    left: 75vw;
-    background-color: goldenrod;
-    transform: rotate(70deg);
-    border-radius: 50%;
-  }
-  100% {
-    top: 80vh;
-    left: 90vw;
-    background-color: skyblue;
-    transform: rotate(30deg);
-  }
-
-  
 }
 #div1 {
   animation-delay: 1s;
@@ -149,4 +91,9 @@ body >.animation div{
 #div5 {
   animation-delay: 5s;
   margin: 10px;
+}
+.animation{
+  background-color: red;
+  height: 300px;
+  width: 100%;
 }
