@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Cormorant+Garamond:ital,wght@1,700&family=PT+Sans&family=Roboto:wght@400;500;900&display=swap');
+ *{
+  font-family: 'Roboto',sans-serif;
+  font-size: 30px;
+ }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin:0 auto;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border: 10px solid #101110;
+  background-color: #101110;
+
+}
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-flow: minmax(60px ,auto);
+}
+input[type='text']{
+  width: 100%;
+  height: 75px;
+  background-color: #101110;
+  border: 0px;
+  color: #fff;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+}
+#clear{
+ grid-column: 1/3;
+ color: #262834;
+ grid-row: 1;
+}
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+}
+#backspace{
+  color: #262834;
+}
+button{
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #262834;
+  color: white;
+  font-weight: 500;
+}
+input:focus,
+input:active,
+button:focus,
+button:active{
+  outline: none;
+}
+button:hover{
+  background-color: greenyellow;
+}
+.highlight {
+  background-color: #56cbfb;
+}
+body >.animation div{
+  height: 100px;
+  width: 100%;
+  background-color: green;
+  animation-name: moves;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moves {
+  0% {
+    top: 5px;
+    left: 5px;
+    background-color: green;
+  }
+  20% {
+    top: 80vh;
+    left: 20vw;
+    background-color: greenyellow;
+    transform: rotate(10deg);
+  }
+  /* 30%{
+  top: 200px;
+  left: 500px;
+  background-color: orange;
+  transform: rotate(90deg);
+
+} */
+  40% {
+    top: 5px;
+    left: 40vw;
+    border-radius: 50%;
+    background-color: orangered;
+  }
+  55% {
+    top: 80vh;
+    left: 55vw;
+    background-color: gold;
+    transform: rotate(50deg);
+  }
+  75% {
+    top: 5px;
+    left: 75vw;
+    background-color: goldenrod;
+    transform: rotate(70deg);
+    border-radius: 50%;
+  }
+  100% {
+    top: 80vh;
+    left: 90vw;
+    background-color: skyblue;
+    transform: rotate(30deg);
+  }
+
+  
+}
+#div1 {
+  animation-delay: 1s;
+  margin: 10px;
+  animation-direction: normal;
+}
+#div2 {
+  animation-delay: 2s;
+  margin: 10px;
+  animation-direction: reverse;
+}
+#div3 {
+  animation-delay: 3s;
+  margin: 10px;
+  animation-direction: alternate;
+}
+#div4 {
+  animation-delay: 4s;
+  margin: 10px;
+  animation-direction: alternate-reverse;
+}
+#div5 {
+  animation-delay: 5s;
+  margin: 10px;
+}
